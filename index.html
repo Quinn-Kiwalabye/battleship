@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BattleshipGame</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#" />
+</head>
+<body>
+    <h1>Battleship Game</h1>
+    <div ida="game-info">
+        <p>Turn: <span id="turn-display"></span></p> <!--this will display whose turn it is-->
+        <p>Info: <span id="Info-display"></span></p> <!--Inside the div, there are two p elements, each containing a span element with a unique id attribute. The first p element displays the current turn in the game, and the second p element displays some additional information-->
+    </div> <!--The span elements have empty content initially, as indicated by the absence of any text or HTML tags between the opening and closing span tags. The content of these span elements can be dynamically updated using JavaScript, which could be used to display the current game state or any other relevant information to the user.
+    -->
+    <div id="gameBoard-container">
+        <div class="Grid" id="my-grid"></div>
+        <div class="Grid" id="enemy-grid"></div>
+    </div>
+
+    <div class="options-container">
+        <div id="0" class="destroyer-preview destroyer" draggable="true"></div>
+        <div id="1" class="submarine-preview submarine" draggable="true"></div>
+        <div id="2" class="cruiser-preview cruiser" draggable="true"></div>
+        <div id="3" class="battleship-preview battleship" draggable="true"></div>
+        <div id="4" class="carrier-preview carrier" draggable="true"></div>
+    </div>
+
+    <div class="Button">
+    <button id="flip-button">FLIP</button>
+    <button id="start-button">START</button>
+    </div>
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>

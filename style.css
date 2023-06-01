@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f3c9e8dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  #gameBoard-container {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .Grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    width: 400px;
+    height: 400px;
+    margin: 1rem;
+    border: 2px solid rgb(3, 3, 3);
+  }
+  
+  #my-grid {
+    background-color: #f3eb94;
+  }
+  
+  #enemy-grid {
+    background-color: white;
+  }
+
+
+  .options-container {
+    width: 300px;
+    height: 30px;
+    margin: 30px 0;
+    background-color: rgb(5, 168, 249);
+   display: flex;
+   align-items: center;
+  }
+  
+  .carrier-preview{
+    width: 50px;
+    height: 10px;
+    margin: 3px;
+  }
+
+  .carrier{
+    background-color: rgb(201, 100, 214);
+
+  }
+
+  .battleship-preview{
+    width: 40px;
+    height: 10px;
+    margin: 3px;
+  }
+
+  .battleship{
+    background-color: rgb(142, 214, 100);
+  }
+
+  .cruiser-preview{
+    width: 30px;
+    height: 10px;
+    margin: 3px;
+  }
+
+  .cruiser{
+    background-color: rgb(242, 185, 30);
+
+  }
+
+  .submarine-preview{
+    width: 30px;
+    height: 10px;
+    margin: 3px;
+  }
+
+  .submarine{
+    background-color: rgb(68, 71, 216);  }
+
+  .destroyer-preview{
+    width: 20px;
+    height: 10px;
+    margin: 3px;
+  }
+
+  .destroyer{
+    background-color: rgb(56, 2, 49);
+
+  }
+
+  .taken {
+    border: solid white;
+  }
+  
+
+  .cell {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    float: left;
+  }
+  
+  #enemy-grid .destroyer,
+  #enemy-grid .submarine,
+  #enemy-grid .battleship,
+  #enemy-grid .cruiser,
+  #enemy-grid .carrier {
+    background-color: white;
+  }
+
+  .boom{
+    background-color: red !important;
+  }
+
+  .empty {
+    background-color: grey !important;
+  }
+
+  .Button{
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .highlight{
+    background-color: grey;
+  }
+
+ 
